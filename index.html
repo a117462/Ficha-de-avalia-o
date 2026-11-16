@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Pão Quente</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Padaria Pão Quente</h1>
+        <nav>
+            <a href="index.html" class="ativo">Início</a>
+            <a href="fornada.html">Fornadas</a>
+            <a href="premios.html">Prémios</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Horários de Funcionamento</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda a Sexta</td>
+                        <td>09:00 às 16:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábados</td>
+                        <td>08:00 às 12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Feriados</td>
+                        <td>08:00 às 10:00</td>
+                    </tr>
+                    <tr>
+                        <td>Domingos</td>
+                        <td>Fechado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Nossa História</h2>
+            <p>Em funcionamento desde 1976, quando o fundador <a href="#Marco">Marco Aurélio</a> fundou esta padaria,<br> e desde então mantemo-nos a produzir para toda a região, seja por encomendas ou por atendimento em loja.</p>
+            <img src="imagens/fachada.jpg" alt="Fachada da Padaria Pão Quente">
+            
+            <h2 class="titulo-clientes">Clientes</h2>
+            <div class="galeria-clientes">
+                <img src="imagens/cliente1.jpg" alt="Cliente 1">
+                <img src="imagens/cliente2.jpg" alt="Cliente 2">
+            </div>
+        </section>
+
+        <section id="encomendas">
+            <h2>Faça a sua Encomenda</h2>
+            <p>Reserve o seu pão quente para levantar na loja sem esperar.</p>
+
+            <form id="form-encomenda" class="caixa-encomenda">
+                <input type="text" id="nome-cliente" placeholder="O seu nome" required>
+                <input type="text" id="pedido-cliente" placeholder="O que deseja encomendar? (Ex: 2 Broas de Milho)" required>
+                <button type="submit" class="btn-acao">Solicitar Encomenda</button>
+            </form>
+
+            <p id="aviso-encomenda" class="mensagem-sucesso" style="display: none;"></p>
+
+                <h2 class="titulo-mapa">Onde Estamos</h2>
+            <iframe 
+                class="mapa-padaria"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.762817991096!2d-8.536672123448922!3d41.139703411321214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2463240f06c9df%3A0x5c70cd68de8b451b!2sEscola%20Secund%C3%A1ria%20de%20Gondomar!5e0!3m2!1spt-PT!2spt!4v1794843825456!5m2!1spt-PT!2spt" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+
+        <section id="Marco">
+            <h2>Marco Aurélio</h2>
+            <h3>Fundador</h3>
+            <img src="imagens/marcoa.png" alt="Marco Aurélio, fundador da padaria">
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
